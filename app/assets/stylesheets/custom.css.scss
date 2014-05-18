@@ -12,6 +12,7 @@ html {
 
 body {
   padding-top: 60px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 section {
@@ -37,6 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
+  font-weight: lighter;
+  font-variant: small-caps;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -49,6 +52,8 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $grayLight;
+  font-weight: lighter;
+  font-variant: small-caps;
 }
 
 p {
@@ -104,6 +109,7 @@ footer {
 /* miscellaneous */
 
 .debug_dump {
+  display: none;
   clear: both;
   float: left;
   width: 100%;
@@ -243,4 +249,54 @@ aside {
   .gravatar {
     margin: 1px 1px;
   }
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #599397;
+  background-image: -moz-linear-gradient(top, #599397, #599397);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599397), to(#111111));
+  background-image: -webkit-linear-gradient(top, #599397, #599397);
+  background-image: -o-linear-gradient(top, #599397, #111111);
+  background-image: linear-gradient(to bottom, #599397, #599397);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599397', endColorstr='#599397', GradientType=0);
+  border-color: #599397;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: white;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a:hover {
+  color: #333;
+}
+
+.btn-primary {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #599397;
+  background-image: -moz-linear-gradient(top, #599397, #599397);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599397), to(#599397));
+  background-image: -webkit-linear-gradient(top, #599397, #599397);
+  background-image: -o-linear-gradient(top, #599397, #599397);
+  background-image: linear-gradient(to bottom, #599397, #599397);
+  background-repeat: repeat-x;
+  border-color: #599397;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  color: #599397;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #333;
+  background-image: -moz-linear-gradient(top, #333, #333);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#333));
+  background-image: -webkit-linear-gradient(top, #333, #333);
+  background-image: -o-linear-gradient(top, #333, #333);
+  background-image: linear-gradient(to bottom, #333, #333);
+  background-repeat: repeat-x;
+  border-color: #333;
+}
+
+a {
+color: #599397;
+text-decoration: none;
 }
